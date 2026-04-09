@@ -2,9 +2,9 @@
 
 echo " Vérification du code avant commit..."
 
-# Vérifie si le dossier laravel/laravel existe
-if [ -d "laravel/laravel" ]; then
-  cd laravel/laravel
+# Vérifie si le dossier laravel existe
+if [ -d "laravel" ]; then
+  cd laravel
 
   # Vérifie si npm est installé
   if command -v npm >/dev/null 2>&1; then
@@ -20,7 +20,7 @@ if [ -d "laravel/laravel" ]; then
     echo "npm non trouvé, lint ignoré"
   fi
 else
-  echo "Dossier laravel/laravel introuvable"
+  echo "Dossier laravel introuvable"
 fi
 
 echo "Vérification terminée"
